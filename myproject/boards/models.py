@@ -5,6 +5,7 @@ class Board(models.Model):
     name        = models.CharField(max_length=30, unique=True)
     description = models.CharField(max_length=100)
 
+# returns objects with board names
     def __str__(self):
         return self.name
 
